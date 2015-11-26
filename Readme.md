@@ -3,7 +3,7 @@
 [![NPM version][npm-image]][npm-url]
 [![license][license-image]][license-url]
 
-A animation component for Deku.
+An animation component for Deku.
 
 ## Installation
 
