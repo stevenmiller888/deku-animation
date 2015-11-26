@@ -12,7 +12,7 @@ A Deku animation component.
 ## Usage
 
 ```js
-<Animation type="bounceDown" duration='1s' iterations={3}>
+<Animation type="circleAround" duration="3s" iterations={2}>
   <h1>I am animated!</h1>
 </Animation>
 ```
@@ -21,6 +21,7 @@ A Deku animation component.
 
 | Name | Description          |
 | ------------- | ----------- |
+| circleAround | rotates content around in a circle |
 | bounceDown      | moves the content down slowly, then up quickly |
 | pulsate     | expands and contracts the content.     |
 
