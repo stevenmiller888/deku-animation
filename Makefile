@@ -15,7 +15,7 @@ default: example node_modules test-style
 
 example: node_modules
 	@$(BROWSERIFY) example/index.js -t [ babelify --presets [ es2015 react ] ] > example/build.js
-	@$(DUO) lib/index.css --stdout > example/build.css
+	@cp lib/index.css example/build.css
 
 #
 # Test style.
