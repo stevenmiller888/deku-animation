@@ -1,5 +1,7 @@
-import element from 'dekujs/virtual-element';
-import { deku, render } from 'dekujs/deku';
+/** @jsx element */
+
+import element from 'virtual-element';
+import { deku, render } from 'deku';
 import Animation from '../lib';
 
 let app = deku(<div style="display:block;text-align:center;margin-top: 200px;">

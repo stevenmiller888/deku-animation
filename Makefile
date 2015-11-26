@@ -1,4 +1,5 @@
 BIN := ./node_modules/.bin
+BROWSERIFY := $(BIN)/browserify
 ESLINT := $(BIN)/eslint
 DUO := $(BIN)/duo
 
@@ -13,7 +14,7 @@ default: example node_modules test-style
 #
 
 example: node_modules
-	@$(DUO) --copy --use ./support/duo example/index.js --stdout > example/build.js
+	@$(BROWSERIFY) example/index.js -t [ babelify --presets [ es2015 react ] ] > example/build.js
 	@$(DUO) lib/index.css --stdout > example/build.css
 
 #
